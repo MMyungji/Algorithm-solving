@@ -1,7 +1,3 @@
-graph_list = {1: set([3, 4]),
-              2: set([3, 4, 5]),
-              3: set([1, 5]),
-              4: set([1]),
-              5: set([2, 6]),
-              6: set([3, 5])}
-print(graph_list)
+p1 = [2, 1, 3, 2]
+p2 = p1.pop(0)
+print(p1)
