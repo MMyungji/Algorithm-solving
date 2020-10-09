@@ -1,3 +1,4 @@
-p1 = [2, 1, 3, 2]
-p2 = p1.pop(0)
-print(p1)
+import itertools
+nums = [1,2,3]
+print(list(itertools.permutations(nums)))
+print(list(map(list,itertools.permutations(nums))))
