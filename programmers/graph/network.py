@@ -11,6 +11,7 @@ def solution(n, computers):
         
         #stack이 비어있으면 네트워크 하나 형성된 것
         while st:
+            print(f"st : {st}")
             #현재 컴퓨터 번호
             com_num=st.pop()
             print(f"com_num : {com_num}")
@@ -18,12 +19,15 @@ def solution(n, computers):
             #방문 체크
             if visited[com_num] == 0:
                 visited[com_num] = 1
+                print(f"visited {visited}")
             #행 개수 만큼(컴퓨터 개수) 반복문 > 연결되어있고 방문하지 않은 곳을 stack에 추가
             #연결된 노드끼리가 하나이기 때문에 연결된 노드 체크
             for i in range(len(computers[0])):
+                print(f"com_num, i = {computers[com_num][i]}, visited[i] = {visited[i]}")
                 if computers[com_num][i] == 1 and visited[i]==0:
+                    print("i'm in")
                     st.append(i)
-                    print(f"st : {st}")
+                    
     
     #첫번째 컴퓨터부터 체크
     idx=0
@@ -40,7 +44,8 @@ def solution(n, computers):
     return answer
 
 num = int(input())
-com = input()
-print(solution(num,com))
+com = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
+
+
 
 
