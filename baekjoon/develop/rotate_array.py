@@ -52,6 +52,11 @@ def arr_split1():
 
 '''    
     
+N,M,R = map(int,input().split())
+
+arr = [input().split() for _ in range(N)]
+
+test = list(map(int,input().split()))
 
 def solve(num):
     global arr
@@ -105,11 +110,7 @@ def solve(num):
         print("Invaild Input")
 
 
-N,M,R = map(int,input().split())
 
-arr = [input().split() for _ in range(N)]
-
-test = list(map(int,input().split()))
 
 for i in test:
     solve(i)
