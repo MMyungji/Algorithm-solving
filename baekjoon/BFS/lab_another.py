@@ -72,18 +72,3 @@ def wall2():
 
 wall2()
 print(answer)
-
-
-
-    
-
-
-
-
-
-
-    
-
-
-
-
